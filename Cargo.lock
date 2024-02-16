@@ -3,20 +3,29 @@
 version = 3
 
 [[package]]
-name = "config"
+name = "gosub-engine"
 version = "0.1.0"
 dependencies = [
- "net",
+ "gosub_config",
+ "gosub_net",
+ "gosub_shared",
 ]
 
 [[package]]
-name = "gosub"
+name = "gosub_config"
 version = "0.1.0"
 dependencies = [
- "config",
- "net",
+ "gosub_net",
+ "gosub_shared",
 ]
 
 [[package]]
-name = "net"
+name = "gosub_net"
+version = "0.1.0"
+dependencies = [
+ "gosub_shared",
+]
+
+[[package]]
+name = "gosub_shared"
 version = "0.1.0"

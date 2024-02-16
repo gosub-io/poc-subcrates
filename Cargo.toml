@@ -1,5 +1,5 @@
 [package]
-name = "gosub"
+name = "gosub-engine"
 version = "0.1.0"
 edition = "2021"
 
@@ -11,5 +11,6 @@ members = [
 ]
 
 [dependencies]
-config = { path = "crates/config", features = [] }
-net = { path = "crates/net" }
+gosub_shared = { path = "crates/shared", features = [] }
+gosub_config = { path = "crates/config", features = [] }
+gosub_net = { path = "crates/net", features = [] }

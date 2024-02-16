@@ -1,9 +1,13 @@
 [package]
-name = "config"
+name = "gosub_config"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-net = { path = "../net" }
+gosub_shared = { path = "../shared", features = [] }
+gosub_net = { path = "../net", features = [] }
+
+[features]
+with_gosub_prefix = [ ]
